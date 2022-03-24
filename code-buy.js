@@ -32,6 +32,28 @@ function quit(event){
     }
     update();
 }
+var saved = false;
+function save_info(event){
+    if(saved){
+        saved = false;
+        let divs = document.getElementById("form").getElementsByTagName("input");
+        let total = divs.length;
+        for ( let i = 0; i < total ; i++){
+            let div = divs[i];
+            div.setAttribute("autocomplete", "nope");
+        }
+        document.getElementById("form").setAttribute("autocomplete", "nope");
+    }else{
+        saved = true;
+        let divs = document.getElementById("form").getElementsByTagName("input");
+        let total = divs.length;
+        for ( let i = 0; i < total ; i++){
+            let div = divs[i];
+            div.setAttribute("autocomplete", "on");
+        }
+        document.getElementById("form").setAttribute("autocomplete", "on");
+    }
+}
 function init(){
     let divs = document.getElementsByClassName("selected");
     let total = divs.length;
@@ -52,6 +74,7 @@ function init(){
         let minus = minusBots[i];
         minus.addEventListener("click",quit);
     }
-    console.log("hola mundo");
+    let save = document.getElementById("save");
+    save.addEventListener("click",save_info);
 }
 document.addEventListener("load",init());
