@@ -102,6 +102,10 @@ html, body{
     text-align: center;
     background-color: #F2F2F2;;
 }
+.amount input:focus{
+    border: none;
+    outline: none;
+}
 .amount input[type=number]::-webkit-inner-spin-button,
 .amount input[type=number]::-webkit-outer-spin-button {
     appearance: none;
@@ -178,6 +182,10 @@ html, body{
     border: none;
     font-size: 1rem;
     color: var(--total-color);
+    background-color: white;
+}
+option,option::selection,option:active{
+    background-color: white;
 }
 .border input:active{
     border: none;

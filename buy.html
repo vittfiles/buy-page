@@ -17,13 +17,13 @@
                     <div class="border sm-100">
                         <img src="img/2x/baseline_email_white_24dp.png" alt="" class="icon">
                         <img src="img/2x/baseline_email_orange_24dp.png" alt="" class="icon-orange">
-                        <input class="selected" type="email" name="email" id="email" autocomplete="nope" placeholder="Enter your email...">
+                        <input class="selected" type="email" name="email" id="email" autocomplete="nope" required placeholder="Enter your email...">
                     </div>
                     <label for="phone" class="input-title sm-100">Phone</label>
                     <div class="border sm-100">
                         <img src="img/2x/baseline_call_white_24dp.png" alt="" class="icon">
                         <img src="img/2x/baseline_call_orange_24dp.png" alt="" class="icon-orange">
-                        <input class="selected" type="phone" name="phone" id="phone" autocomplete="nope" placeholder="Enter your phone...">
+                        <input class="selected" type="tel" name="phone" id="phone" autocomplete="nope" required placeholder="Enter your phone...">
                     </div>
                 </fieldset>
                 <fieldset class="sub-form" autocomplete="off">
@@ -32,26 +32,26 @@
                     <div class="border sm-100">
                         <img src="img/2x/baseline_account_circle_white_24dp.png" alt="" class="icon">
                         <img src="img/2x/baseline_account_circle_orange_24dp.png" alt="" class="icon-orange">
-                        <input class="selected" type="text" name="name" id="name" autocomplete="nope" placeholder="Your full name..">
+                        <input class="selected" type="text" name="name" id="name" autocomplete="nope" required placeholder="Your full name..">
                     </div>
                     <label for="Address" class="input-title sm-100">Address</label>
                     <div class="border sm-100">
                         <img src="img/2x/baseline_home_white_24dp.png" alt="" class="icon">
                         <img src="img/2x/baseline_home_orange_24dp.png" alt="" class="icon-orange">
-                        <input  class="selected"type="text" name="Address" id="Address" autocomplete="nope" placeholder="Your addresss..">
+                        <input  class="selected"type="text" name="Address" id="Address" autocomplete="nope" required placeholder="Your addresss..">
                     </div>
                     <label for="city" class="input-title sm-100">City</label>
                     <div class="border sm-100">
                         <img src="img/2x/baseline_apartment_white_24dp.png" alt="" class="icon">
                         <img src="img/2x/baseline_apartment_orange_24dp.png" alt="" class="icon-orange">
-                        <input class="selected" type="text" name="city" id="city" autocomplete="nope" placeholder="Your city..">
+                        <input class="selected" type="text" name="city" id="city" autocomplete="nope" required placeholder="Your city..">
                     </div>
                     <div class="sm-48 md-100 lg-48">
                         <label for="country" class="input-title">Country</label>
                         <div class="border sm-100">
                             <img src="img/2x/baseline_public_white_24dp.png" alt="" class="icon">
                             <img src="img/2x/baseline_public_orange_24dp.png" alt="" class="icon-orange">
-                            <select class="selected" name="country" id="country" autocomplete="nope">
+                            <select class="selected" name="country" id="country" autocomplete="nope" required>
                                 <option value="argentina">Argentina</option>
                                 <option value="united-states">United States</option>
                                 <option value="spain">Spain</option>
@@ -63,7 +63,7 @@
                         <div class="border sm-100">
                             <img src="img/2x/baseline_markunread_mailbox_white_24dp.png" alt="" class="icon">
                             <img src="img/2x/baseline_markunread_mailbox_orange_24dp.png" alt="" class="icon-orange">
-                            <input class="selected" type="text" name="postal" id="postal" autocomplete="nope" placeholder="Your postal code">
+                            <input class="selected" type="text" name="postal" id="postal" autocomplete="nope" required placeholder="Your postal code">
                         </div>
                     </div>
                     <div class="sm-100 check-div">
@@ -89,7 +89,7 @@
                     </div>
                     <div class="amount">
                         <button class="minus">-</button>
-                        <input type="number" name="amount" id="amount" value="1">
+                        <input type="number" name="amount" id="amount" value="1" readonly>
                         <button class="plus">+</button>
                     </div>
                 </div>
@@ -106,7 +106,7 @@
                     </div>
                     <div class="amount">
                         <button class="minus">-</button>
-                        <input type="number" name="amount" id="amount" value="1">
+                        <input type="number" name="amount" id="amount" value="1" readonly>
                         <button class="plus">+</button>
                     </div>
                 </div>

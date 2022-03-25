@@ -1,3 +1,4 @@
+//style for the inputs
 function gray(event){
     event.target.parentElement.style.border = "2px solid #828282";
     event.target.parentElement.getElementsByClassName("icon-orange")[0].style.display = "none";
@@ -19,6 +20,7 @@ function update(){
     }
     document.getElementById("total-out").value = "$" + total.toFixed(2);
 }
+//automatically calculate the total to pay
 function add(event){
     let total = event.target.parentElement.getElementsByTagName("input")[0].value;
     event.target.parentElement.getElementsByTagName("input")[0].value = parseInt(total) + 1;
@@ -32,6 +34,7 @@ function quit(event){
     }
     update();
 }
+//save or not the info of the formulary
 var saved = false;
 function save_info(event){
     if(saved){
@@ -53,6 +56,9 @@ function save_info(event){
         }
         document.getElementById("form").setAttribute("autocomplete", "on");
     }
+}
+function form_validate(event){
+    alert("success");
 }
 function init(){
     let divs = document.getElementsByClassName("selected");
@@ -76,5 +82,6 @@ function init(){
     }
     let save = document.getElementById("save");
     save.addEventListener("click",save_info);
+    document.getElementById("form").addEventListener("submit",form_validate);
 }
-document.addEventListener("load",init());
+document.addEventListener("DOMContentLoaded",init);
