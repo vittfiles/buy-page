@@ -210,6 +210,9 @@ option,option::selection,option:active{
     padding-left: .5rem;
 }
 .button-container{ display: flex;}
+#s-bns #s-all-bn.c-bn,
+#s-bns #s-rall-bn.c-bn,
+#s-bns #s-sv-bn.c-bn,
 .orange-button{
     font-size: 1rem;
     font-weight: 600;
