@@ -223,6 +223,18 @@ option,option::selection,option:active{
     background-color: var(--orange-button);
     color: white;
 }
+#boton-oculto{
+    font-size: 3rem;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+    border:none;
+    color: #e9ad79;
+}
+#boton-oculto:hover{
+    color: var(--orange-button);
+}
 footer{
     justify-content: center;
     font-family: Montserrat;
