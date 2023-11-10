@@ -59,6 +59,7 @@ function save_info(event){
 }
 function form_validate(event){
     alert("success");
+    event.preventDefault();
 }
 function init(){
     let divs = document.getElementsByClassName("selected");

@@ -8,7 +8,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://fir-web-2cb05.web.app/buy.html">
+    <a href="https://vittfiles.github.io/buy-page/">
       Demo
     </a>
     <span> | </span>
@@ -37,12 +37,7 @@
 
 ![screenshot](https://github.com/vittfiles/buy-page/blob/main/screenshot.png)
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
-
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+Test of a responsive checkout page with amount calculator using HTML, CSS and JavaScript
 
 ## Features
 
